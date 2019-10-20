@@ -76,11 +76,11 @@ const board = (() => {
         let player1Box = document.querySelector("#player-1-box");
         let player2Box = document.querySelector("#player-2-box");
         if (player1Turn) {
-            messageDiv.textContent = `${player1Field.value}'s turn.`
+            messageDiv.textContent = `${player1Field.value}'s turn.`;
             activate(player1Box);
             deactivate(player2Box);
         } else {
-            messageDiv.textContent = `${player2Field.value}'s turn.`
+            messageDiv.textContent = `${player2Field.value}'s turn.`;
             deactivate(player1Box);
             activate(player2Box);
         }
